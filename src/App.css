@@ -1,0 +1,40 @@
+.App {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.calculator {
+  display: inline-block;
+  border: 2px solid #333;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.display {
+  background-color: #e0e0e0;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-align: right;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 60px); /* 4 sütun olacak şekilde grid */
+  gap: 10px; /* Tuşlar arası boşluk */
+}
+
+button {
+  width: 60px;
+  height: 60px;
+  font-size: 20px;
+}
+
+.span-two {
+  grid-column: span 2; /* Geniş olan tuşlar iki sütun kaplayacak */
+}
+
+button:nth-child(17) { /* Eşittir tuşu gridde en sağa taşındı */
+  grid-column: 4; /* Sağ alt köşeye yerleştir */
+  grid-row: 5;
+}
